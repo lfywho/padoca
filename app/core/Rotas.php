@@ -5,7 +5,8 @@
         "" => "inicioController",
         "quemsomos" => "quemSomosController",
         "produtos" => "produtosController",
-        "contato" => "contatoController"
+        "contato" => "contatoController",
+        "teste" => "testeController"
     ];
 
 
