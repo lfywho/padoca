@@ -6,6 +6,19 @@
     //CSSs a serem carregados
     $css = ["main.css", "paginas.css"];
 
+    include __DIR__ . "/../core/Calculadora.php";
+
+    $objCalculadora = new Calculadora();
+
+    $numero1 = 4;
+    $numero2 = 8;
+    $numero3 = 2;
+
+    $total = $objCalculadora->somar($numero1, $numero2);
+
+    $media = $objCalculadora->media($numero1, $numero2);
+    echo $media;
+
 ?>
 
 <!DOCTYPE html>
