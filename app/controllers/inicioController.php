@@ -17,8 +17,15 @@
     $total = $objCalculadora->somar($numero1, $numero2);
 
     $media = $objCalculadora->media($numero1, $numero2);
-    echo $media;
 
+    include __DIR__ . "/../model/Produtos.php";
+
+    $objProdutos = new Produtos();
+
+    $objProdutos->capturarDado(1);
+
+    $nome = $objProdutos->getNome();
+    
 ?>
 
 <!DOCTYPE html>
